@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "poisn",
+  "version": "${version}",
+  "name": "PoisonPulse",
+  "description": "POISN (PoisonPulse) — offline client mod: custom player nametags + item prices from local prices.json.",
+  "authors": ["PoisonPulse"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/poisn/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.poisonpulse.poisn.PoisnClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "~26.2"
+  },
+  "mixins": ["poisn.mixins.json"]
+}
